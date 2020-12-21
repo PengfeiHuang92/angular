@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<!--
+    MVC: Model views and controller
+   
+    Model : date, such as JSON
+    view : used to display content & data to a user in a browser
+    controller : control the functionality of our views
+
+    author: Pengfei Huang
+   
+    Download : angularjs.org
+-->
+<html ng-app="myApp"> 
+
+<head>
+    <title>Home page</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-route.js"></script>
+    <script src="app/app.js"></script>
+</head>
+<body>
+   <!--  
+       ng-include is blocked by Cross-origin resource sharing(CORS) policy
+       <ng-include src="'header.html'"></ng-include>  
+
+    -->
+    <header id="page_title">
+        <p>Welcome to my page !</p>
+        <ul> 
+            <li> <a href=""> Home </a> </li>
+            <li> <a href=""> Menu </a> </li>
+            <li> <a href=""> Shopping List </a> </li>
+        </ul>        
+    </header>
+
+    <div id="page_menu"  ng-controller="myAppController">
+
+    Search <input type = "text" placeholder = "Food Item" ng-model="name"/> 
+    <ul>
+        <li ng-repeat="fr in friedRice | filter:name">
+           <img ng-src="{{fr.itemImg}}" 
+           style="float:left; width:20px;margin-right:2px;" 
+           ng-show="fr.itemImg">   <!-- ng-show will be false when fr.itemImg does not exist-->
+           {{fr.itemName}} ${{fr.itemPrice}}
+        </li>
+    </ul>
+    
+    </div>
+  
+</body>
+</html>

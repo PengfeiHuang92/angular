@@ -1,0 +1,27 @@
+body{
+    position: relative;
+}
+header#page_title ul{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    
+}
+header#page_title p{
+    display: block;
+    float: left;
+}
+header#page_title ul li{
+    display: inline;
+    margin: 2px;
+    
+}
+
+div#page_menu{
+    position: absolute;
+    top: 50px;
+}
+
+div#page_menu ul li {
+    list-style-type: none;
+}
