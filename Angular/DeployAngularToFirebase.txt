@@ -1,0 +1,15 @@
+created a new angular project
+	ng new new_project
+
+.install firebase and angular/fire
+
+	npm install firebase @angular/fire
+
+Open firebase website and create a new project
+(This new project will link to the next step)
+
+add @angular/fire to angular project:
+	ng add @angular/fire
+
+deploy using Angular CLI
+	ng deploy

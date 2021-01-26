@@ -1,0 +1,11 @@
+.Install and import (styles.css) boostrap 
+	
+	npm i --save bootstrap
+
+	@import "~bootstrap/dist/css/bootstrap.css";
+
+.install and import (app.module.ts) ng-bootstrap
+
+	ng add @ng-bootstrap/ng-bootstrap
+	
+	import { NgbModule } from '@ng-bootstrap/ng-bootstrap';	

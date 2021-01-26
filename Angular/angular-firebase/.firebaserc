@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-369a2": {
+      "hosting": {
+        "angular-firebase": [
+          "angular-369a2"
+        ]
+      }
+    }
+  }
+}

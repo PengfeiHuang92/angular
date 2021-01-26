@@ -1,0 +1,14 @@
+.install firebase and angular/fire
+
+	npm install firebase @angular/fire
+
+.adding @angular/fire to angular project:
+	
+	ng add @angular/fire
+
+.deploy 	
+	ng deploy
+	
+
+ 
+

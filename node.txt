@@ -1,0 +1,68 @@
+download node (https://nodejs.org/en/)
+
+download Angular CLI (npm install -g @angular/cli)
+
+creat a new ng project (ng new hello-world)
+
+go to the application folder and run the command 'ng serve' to start the serve
+
+-----------
+
+intall typescript (pm install -g typescript)
+
+'tsc main.ts' transplite typeScript to javaScript. 
+
+'ng main.js' to run the JavaScript
+ 
+'ng g c class'  creat a new conponent called class from command line.
+ 
+'ng g s class'  creat a new service call class from command line
+
+'ng g p class'  creat a new custom pipe class from command line
+
+'ng g d customDirectives' creat a custom directive from command line
+
+'npm install bootstrap --save' install bootstrap and the save flag adds bootstrap as a dependency into package.json file
+go to the style.css and do the import '@import "~bootstrap/dist/css/bootstrap.css";'
+----------
+
+TypeScript
+
+know the different between 'var i' and  'let i'.
+var: Declare a global variable
+let: Declare a local variable
+Should use let instead of var most of time to avoid the logic error.
+
+Declare a variable: (number, boolean, string, any, number[] or  
+ by default, 'let a' declare a local variable with any type.
+ 1. let a: number;   ( declare a local number type variable a )
+ 2. var a: string;   ( declare a global strig type variable a )
+ 3. let a: any;	     ( declare a varible with no specific type )
+ 4. let a: any[] = [1,true,'a'] ( declare a local string with any type )
+ 5. const a = 0;     ( declare a constant variable a with value 0 )
+ 6. enum Color {Red = 0, Green = 1, Blue = 2};  
+    let background = Color.Red;  //calling a enum 
+ 7. let message; //message is a any type variable
+    let endsWith = (<string>message).endsWith('a'); //by using <string> to tell TypeScript that message is string type
+    let endsWith = (message as string).endsWith('a'); //or using message as string
+
+defined a function
+ 1. let doSomething = function(message){console.log(message);}
+ 2. let doSomething = (message) => {console.log(message);}  // arrow function
+
+event bubbling
+	<element> 		   ^
+		<element>	   |
+			<element>  |
+
+by using $event.stopPropagation() to prvent event bubbling
+
+Asynchronous Operation:
+  The process that excuted our code does not want to block while 
+waiting for the result coming back from the server.
+--------------------
+PascalCase is a naming convention in which the first letter of each word in a compound word is capitalized
+Cohesion : things that are related should be part of one unit they should go together.
+  example: when declare a class, all the related function should be part of the interface.
+
+
